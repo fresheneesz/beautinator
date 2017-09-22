@@ -131,7 +131,7 @@ function lineLength(line) {
 // trims the spaces on a function string to be reasonable
 function trimFunctionString(fnStr, indent) {
     var fnLines = fnStr.split('\n')
-    if(fnLines.length === 1) return fnString
+    if(fnLines.length === 1) return fnStr
 
     var lastLine = fnLines[fnLines.length-1]
     if(lastLine !== '}') {

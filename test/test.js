@@ -43,3 +43,7 @@ moose(); whatever
     }
     ]
 ))
+
+
+
+console.log(b([1,2,3,{a:1,b:2,c:function() {moose(); whatever;awef.awgawef.ew.waeg.awe.f.aweg.awe.awf()}}]))

@@ -2,12 +2,12 @@
 `beautinator`
 =====
 
-A quick and dirty javascript beautifier that runs in the browser and supports stringifying functions.
+A quick and dirty javascript pretty printer for javascript objects that runs in the browser. Works for objects that contain functions.
 
 Motivation
 ==========
 
-I wanted a js formatter that runs in the browser, and all the modules I could find are either
+I wanted a module that can print beautify javascript objects and runs in the browser. But all the modules I could find are either
 heavy-weight server-only libraries like prettier and js-prettify, or
 libraries that don't return valid javascript like fmt-obj and pretty-format.
 I did find https://github.com/xpl/string.ify but it cause me trouble since it was written in ES6, which my tools don't support yet.
