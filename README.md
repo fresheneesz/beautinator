@@ -4,6 +4,28 @@
 
 A quick and dirty javascript pretty printer for javascript objects that runs in the browser. Works for objects that contain functions.
 
+Example
+==========
+
+```
+var result = beautinator({ "font-size": "26px","font-family": "'Open Sans', sans-serif",color: "white", overflow: "hidden",padding: "4px 4px 4px 8px",Text: { display: "block", width: "100%","text-align": "center", "padding-left": "2px","word-break": "break-word"}})
+console.log(result)
+```
+
+Result:
+```
+{ "font-size": "26px",
+  "font-family": "'Open Sans', sans-serif",
+  color: "white", overflow: "hidden",
+  padding: "4px 4px 4px 8px",
+  Text: { display: "block", width: "100%",
+          "text-align": "center", "padding-left": "2px",
+          "word-break": "break-word"
+  }
+}
+```
+
+
 Motivation
 ==========
 
