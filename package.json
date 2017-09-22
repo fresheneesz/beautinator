@@ -1,0 +1,19 @@
+{"name":"beautinator",
+ "version":"0.0.1",
+ "main":"beautinator.js",
+ "description": "A quick and dirty beautifier for javascript",
+ "keywords": [
+
+ ],
+ "dependencies":{
+
+ },
+ "devDependencies": {
+     "deadunit": "",
+     "build-modules":"2.1.2"
+ },
+ "repository": {
+   "type": "git",
+   "url": "git://github.com/fresheneesz/beautinator"
+ }
+}
