@@ -1,5 +1,5 @@
 {"name":"beautinator",
- "version":"0.0.1",
+ "version":"0.0.2",
  "main":"beautinator.js",
  "description": "A quick and dirty beautifier for javascript",
  "keywords": [

@@ -56,8 +56,8 @@ function format(x, options) {
 
             var nextValueLines = format(x[k], options).split('\n')
             if(nextValueLines.length > 1) {
-                var nextValue = nextValueLines.slice(0, -1).join('\n'+indent(midLinesIndent))+'\n'+
-                    indent(options.indent)+nextValueLines.slice(-1)
+                var nextValue = nextValueLines.slice(0, -1).join('\n'+indentString(midLinesIndent))+'\n'+
+                    indentString(options.indent)+nextValueLines.slice(-1)
             } else {
                 var nextValue = nextValueLines[0]
             }
@@ -76,7 +76,7 @@ function format(x, options) {
             return line.join(', ')
         })
 
-        var result = '{'+indent(options.indent-1)+processedLines.join(',\n'+indent(options.indent))
+        var result = '{'+indentString(options.indent-1)+processedLines.join(',\n'+indentString(options.indent))
         if(processedLines.length > 1 || result.indexOf('\n') !== -1) {
             result += '\n'
         }
@@ -111,7 +111,7 @@ function validVariableName(name) {
     return true
 }
 
-function indent(num) {
+function indentString(num) {
     var chars = []
     for(var n=0; n<num; n++) {
         chars.push(' ')
@@ -174,7 +174,7 @@ function trimFunctionString(fnStr, indent) {
         if(diff > 0) { // remove some indentation
             fnLines[n] = fnLines[n].slice(diff)
         } else if(diff < 0) {
-            fnLines[n] = indent(-diff)+fnLines[n]
+            fnLines[n] = indentString(-diff)+fnLines[n]
         }
     }
 
