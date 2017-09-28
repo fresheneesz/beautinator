@@ -64,7 +64,7 @@ function format(x, options) {
 
             var nextThing = keyPart+": "+nextValue
             var eventualLength = lineLength(curLine)+(curLine.length-1)*2
-            if(eventualLength+nextThing.length > options.targetWidth) {
+            if(eventualLength+nextThing.length > options.targetWidth && curLine.length > 0) {
                 curLine = [nextThing]
                 lines.push(curLine)
             } else {

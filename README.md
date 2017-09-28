@@ -89,6 +89,7 @@ How to submit pull requests:
 Change Log
 =========
 
+* 0.0.4 - Fixing extra-comma bug that happened when the first item in an object is longer than the `targetWidth`
 * 0.0.1 - first commit!
 
 License

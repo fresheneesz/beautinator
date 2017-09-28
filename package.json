@@ -1,5 +1,5 @@
 {"name":"beautinator",
- "version":"0.0.3",
+ "version":"0.0.4",
  "main":"beautinator.js",
  "description": "A quick and dirty pretty printer for javascript objects",
  "keywords": [
