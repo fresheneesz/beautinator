@@ -103,7 +103,7 @@ function validVariableName(name) {
     for(var n=1; n<name.length; n++) {
         var char = name[n]
         var charCode = char.charCodeAt(0)
-        if(!(a<=charCode && charCode<=z || A<=charCode && charCode<=Z || zero<=charCode && charCode<=nine || firstChar in {_:1,$:1})) {
+        if(!(a<=charCode && charCode<=z || A<=charCode && charCode<=Z || zero<=charCode && charCode<=nine || charCode in {_:1,$:1})) {
             return false
         }
     }

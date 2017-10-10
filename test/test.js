@@ -53,3 +53,7 @@ console.log(b({ "font-size": "26px","font-family": "'Open Sans', sans-serif",col
 console.log(b({
     awefiojaweoifjawawefweaf:"aweofaiuhawiefhawifuhawelifhaweuifheawef"
 }))
+
+console.log(b({
+    '$$first-child':"aweofaiuhawiefhawifuhawelifhaweuifheawef"
+}))
