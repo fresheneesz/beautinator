@@ -57,3 +57,9 @@ console.log(b({
 console.log(b({
     '$$first-child':"aweofaiuhawiefhawifuhawelifhaweuifheawef"
 }))
+
+// was failing on undefined
+console.log(b({
+    x: undefined,
+    y: [undefined]
+}))

@@ -10,6 +10,8 @@ module.exports = function(object, options) {
 }
 
 function format(x, options) {
+    if(x === undefined) return "undefined"
+
     var type = typeof(x)
     if(type === 'function') {
         return trimFunctionString(x.toString(), options.indent)
@@ -82,7 +84,6 @@ function format(x, options) {
         }
 
         return result+'}'
-
     } else { // primitive
         return JSON.stringify(x)
     }
