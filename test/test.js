@@ -44,6 +44,11 @@ moose(); whatever
     ]
 ))
 
+// if the first item in a list exceeds the target length, an extra element appears
+console.log(b(
+    ['awef'],
+    {targetWidth:1}
+))
 
 
 console.log(b([1,2,3,{a:1,b:2,c:function() {moose(); whatever;awef.awgawef.ew.waeg.awe.f.aweg.awe.awf()}}]))

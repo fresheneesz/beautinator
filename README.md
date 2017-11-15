@@ -89,6 +89,7 @@ How to submit pull requests:
 Change Log
 =========
 
+* 0.0.7 - Fixing case where extra element was added to arrays if the first item in the array exceeds the targetWidth
 * 0.0.6 - Fixing failure on undefined values
 * 0.0.5 - Fixing bug where objects containing keys starting witih $ or _ would fail to be surrouneded in quotes if they contained something other than a valid javascript variable name
 * 0.0.4 - Fixing extra-comma bug that happened when the first item in an object is longer than the `targetWidth`
